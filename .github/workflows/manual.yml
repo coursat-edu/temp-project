@@ -1,0 +1,11 @@
+name: On_Push_Action
+on: 
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu_latest
+    steps:
+      - name: 'Checkout'
+        uses: actions/checkout@main
